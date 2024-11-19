@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo API</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <h1>Tìm hiểu RESTFUL API</h1>
+
+        <div class="container">
+            <h2 class="text-center py-5 fs2 text-info">
+                Form quản lí người dùng
+            </h2>
+            <div class="formNguoiDung mb-5">
+                <form action="" id="formQLND">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label"
+                                    >Tài khoản</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    value=""
+                                    id="taiKhoan"
+                                    aria-describedby="helpId"
+                                    placeholder="Tài khoản"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Họ tên</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    value=""
+                                    id="hoTen"
+                                    aria-describedby="helpId"
+                                    placeholder="Họ tên"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Email</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    value=""
+                                    id="email"
+                                    aria-describedby="helpId"
+                                    placeholder="Email"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label"
+                                    >Số điện thoại</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    value=""
+                                    id="soDT"
+                                    aria-describedby="helpId"
+                                    placeholder="Số điện thoại"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Mật khẩu</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                name=""
+                                value=""
+                                id="matKhau"
+                                aria-describedby="helpId"
+                                placeholder="Mật khẩu"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            type="submit"
+                            id="btnSubmit"
+                            class="btn btn-outline-primary"
+                        >
+                            Thêm người dùng
+                        </button>
+                        <button
+                            type="button"
+                            id="btnCapNhat"
+                            class="btn btn-outline-warning"
+                        >
+                            Cập nhật
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-success">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tài khoản</th>
+                            <th scope="col">Họ tên</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">SDT</th>
+                            <th scope="col">Loại người dùng</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- <tr class="">
+                            <td scope="row">R1C1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                        </tr>
+                        <tr class="">
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+            integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
